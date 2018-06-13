@@ -1,6 +1,6 @@
 ﻿Public Class ArticuloClass
     Dim Codigo_, Iva_ As Integer
-    Dim Descripcion_, Unidad_ As String
+    Dim Descripcion_, Unidad_, listaiva_ As String
     Dim Stock_, Costo_, Utilidad_, Venta_, contiva As Decimal
 
 

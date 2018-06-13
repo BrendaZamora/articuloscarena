@@ -31,13 +31,13 @@ Partial Class ArticulosForm
         Me.Utilidad = New System.Windows.Forms.Label
         Me.Venta = New System.Windows.Forms.Label
         Me.descripcion = New System.Windows.Forms.TextBox
-        Me.TextBox2 = New System.Windows.Forms.TextBox
-        Me.TextBox3 = New System.Windows.Forms.TextBox
-        Me.TextBox4 = New System.Windows.Forms.TextBox
+        Me.vent = New System.Windows.Forms.TextBox
+        Me.utilida = New System.Windows.Forms.TextBox
+        Me.cost = New System.Windows.Forms.TextBox
         Me.stoc = New System.Windows.Forms.TextBox
         Me.codigo = New System.Windows.Forms.TextBox
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox
+        Me.unida = New System.Windows.Forms.ComboBox
+        Me.iv = New System.Windows.Forms.ComboBox
         Me.Aceptar = New System.Windows.Forms.Button
         Me.Cancelar = New System.Windows.Forms.Button
         Me.SuspendLayout()
@@ -121,26 +121,26 @@ Partial Class ArticulosForm
         Me.descripcion.Size = New System.Drawing.Size(207, 20)
         Me.descripcion.TabIndex = 8
         '
-        'TextBox2
+        'vent
         '
-        Me.TextBox2.Location = New System.Drawing.Point(157, 346)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(207, 20)
-        Me.TextBox2.TabIndex = 9
+        Me.vent.Location = New System.Drawing.Point(157, 346)
+        Me.vent.Name = "vent"
+        Me.vent.Size = New System.Drawing.Size(207, 20)
+        Me.vent.TabIndex = 9
         '
-        'TextBox3
+        'utilida
         '
-        Me.TextBox3.Location = New System.Drawing.Point(157, 313)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(207, 20)
-        Me.TextBox3.TabIndex = 10
+        Me.utilida.Location = New System.Drawing.Point(157, 313)
+        Me.utilida.Name = "utilida"
+        Me.utilida.Size = New System.Drawing.Size(207, 20)
+        Me.utilida.TabIndex = 10
         '
-        'TextBox4
+        'cost
         '
-        Me.TextBox4.Location = New System.Drawing.Point(157, 229)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(207, 20)
-        Me.TextBox4.TabIndex = 11
+        Me.cost.Location = New System.Drawing.Point(157, 229)
+        Me.cost.Name = "cost"
+        Me.cost.Size = New System.Drawing.Size(207, 20)
+        Me.cost.TabIndex = 11
         '
         'stoc
         '
@@ -156,21 +156,21 @@ Partial Class ArticulosForm
         Me.codigo.Size = New System.Drawing.Size(207, 20)
         Me.codigo.TabIndex = 13
         '
-        'ComboBox1
+        'unida
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(157, 129)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(207, 21)
-        Me.ComboBox1.TabIndex = 14
+        Me.unida.FormattingEnabled = True
+        Me.unida.Location = New System.Drawing.Point(157, 129)
+        Me.unida.Name = "unida"
+        Me.unida.Size = New System.Drawing.Size(207, 21)
+        Me.unida.TabIndex = 14
         '
-        'ComboBox2
+        'iv
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(157, 279)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(207, 21)
-        Me.ComboBox2.TabIndex = 15
+        Me.iv.FormattingEnabled = True
+        Me.iv.Location = New System.Drawing.Point(157, 279)
+        Me.iv.Name = "iv"
+        Me.iv.Size = New System.Drawing.Size(207, 21)
+        Me.iv.TabIndex = 15
         '
         'Aceptar
         '
@@ -197,13 +197,13 @@ Partial Class ArticulosForm
         Me.ClientSize = New System.Drawing.Size(391, 441)
         Me.Controls.Add(Me.Cancelar)
         Me.Controls.Add(Me.Aceptar)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.iv)
+        Me.Controls.Add(Me.unida)
         Me.Controls.Add(Me.codigo)
         Me.Controls.Add(Me.stoc)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.cost)
+        Me.Controls.Add(Me.utilida)
+        Me.Controls.Add(Me.vent)
         Me.Controls.Add(Me.descripcion)
         Me.Controls.Add(Me.Venta)
         Me.Controls.Add(Me.Utilidad)
@@ -228,13 +228,13 @@ Partial Class ArticulosForm
     Friend WithEvents Utilidad As System.Windows.Forms.Label
     Friend WithEvents Venta As System.Windows.Forms.Label
     Friend WithEvents descripcion As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents vent As System.Windows.Forms.TextBox
+    Friend WithEvents utilida As System.Windows.Forms.TextBox
+    Friend WithEvents cost As System.Windows.Forms.TextBox
     Friend WithEvents stoc As System.Windows.Forms.TextBox
     Friend WithEvents codigo As System.Windows.Forms.TextBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents unida As System.Windows.Forms.ComboBox
+    Friend WithEvents iv As System.Windows.Forms.ComboBox
     Friend WithEvents Aceptar As System.Windows.Forms.Button
     Friend WithEvents Cancelar As System.Windows.Forms.Button
 

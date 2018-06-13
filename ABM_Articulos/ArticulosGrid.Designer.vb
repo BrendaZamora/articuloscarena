@@ -28,6 +28,7 @@ Partial Class ArticulosGrid
         Me.Modificar = New System.Windows.Forms.Button
         Me.Eliminar = New System.Windows.Forms.Button
         Me.Salir = New System.Windows.Forms.Button
+        Me.ArticulosCollectionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DescripcionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.CodigoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.UnidadDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
@@ -37,7 +38,6 @@ Partial Class ArticulosGrid
         Me.UtilidadDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.VentaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.DetalleivaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.ArticulosCollectionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ArticulosCollectionBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -93,6 +93,10 @@ Partial Class ArticulosGrid
         Me.Salir.TabIndex = 4
         Me.Salir.Text = "Salir"
         Me.Salir.UseVisualStyleBackColor = True
+        '
+        'ArticulosCollectionBindingSource
+        '
+        Me.ArticulosCollectionBindingSource.DataSource = GetType(ABM_Articulos.ArticulosCollection)
         '
         'DescripcionDataGridViewTextBoxColumn
         '
@@ -156,10 +160,6 @@ Partial Class ArticulosGrid
         Me.DetalleivaDataGridViewTextBoxColumn.HeaderText = "detalleiva"
         Me.DetalleivaDataGridViewTextBoxColumn.Name = "DetalleivaDataGridViewTextBoxColumn"
         Me.DetalleivaDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'ArticulosCollectionBindingSource
-        '
-        Me.ArticulosCollectionBindingSource.DataSource = GetType(ABM_Articulos.ArticulosCollection)
         '
         'ArticulosGrid
         '
